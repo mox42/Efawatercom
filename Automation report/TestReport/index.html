@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">10/9/2023 4:40:26 AM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Login To Website</p> 
+								<p class="duration text-sm">0h:0m:9s+498ms</p> 
+								<span class="datetime">04:40:28 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Login To Website</h5>
+										<span class='badge badge-success'>10/9/2023 4:40:28 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:40:37 AM</span>
+										<span class='badge badge-default'>0h:0m:9s+498ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is designed to verify the login functionality of the website with Admin credentials.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:40:37</td>
+				<td>
+Login successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Category</p> 
+								<p class="duration text-sm">0h:0m:5s+090ms</p> 
+								<span class="datetime">04:40:54 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Created Category</h5>
+										<span class='badge badge-success'>10/9/2023 4:40:54 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:40:59 AM</span>
+										<span class='badge badge-default'>0h:0m:5s+090ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is Focusing on verifying the functionality of creating a category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:40:59</td>
+				<td>
+BillName Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:40:59</td>
+				<td>
+Image Failed to Verify, Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:40:59</td>
+				<td>
+Email Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:40:59</td>
+				<td>
+Location Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:40:59</td>
+				<td>
+Deducted Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\06cb0617-f852-4378-948b-e4553e0014f1_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\06cb0617-f852-4378-948b-e4553e0014f1_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\06cb0617-f852-4378-948b-e4553e0014f1_image.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Category</p> 
+								<p class="duration text-sm">0h:0m:4s+717ms</p> 
+								<span class="datetime">04:41:15 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Created Category</h5>
+										<span class='badge badge-success'>10/9/2023 4:41:15 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:41:19 AM</span>
+										<span class='badge badge-default'>0h:0m:4s+717ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is Focusing on verifying the functionality of creating a category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:19</td>
+				<td>
+BillName Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:41:19</td>
+				<td>
+Image Failed to Verify, Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:19</td>
+				<td>
+Email Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:19</td>
+				<td>
+Location Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:19</td>
+				<td>
+Deducted Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\f0036a02-1086-49fe-8d81-e56e3c532888_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\f0036a02-1086-49fe-8d81-e56e3c532888_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\f0036a02-1086-49fe-8d81-e56e3c532888_image.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Updated Company</p> 
+								<p class="duration text-sm">0h:0m:3s+122ms</p> 
+								<span class="datetime">04:41:41 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Updated Company</h5>
+										<span class='badge badge-success'>10/9/2023 4:41:41 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:41:44 AM</span>
+										<span class='badge badge-default'>0h:0m:3s+122ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of Updating an existing category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:44</td>
+				<td>
+Updated BillName Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:41:44</td>
+				<td>
+Updated Image Failed to Verify, Category ID: 411									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:44</td>
+				<td>
+Updated Email Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:44</td>
+				<td>
+Updated Location Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:41:44</td>
+				<td>
+Updated Deducted Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\0d1dd46d-dda9-4cef-8f6e-65e09e8aea4e_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\0d1dd46d-dda9-4cef-8f6e-65e09e8aea4e_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\0d1dd46d-dda9-4cef-8f6e-65e09e8aea4e_image.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Updated Company</p> 
+								<p class="duration text-sm">0h:0m:3s+116ms</p> 
+								<span class="datetime">04:42:05 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Updated Company</h5>
+										<span class='badge badge-success'>10/9/2023 4:42:05 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:42:08 AM</span>
+										<span class='badge badge-default'>0h:0m:3s+116ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of Updating an existing category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:08</td>
+				<td>
+Updated BillName Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:42:08</td>
+				<td>
+Updated Image Failed to Verify, Category ID: 2									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:08</td>
+				<td>
+Updated Email Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:08</td>
+				<td>
+Updated Location Verified Successfully									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:08</td>
+				<td>
+Updated Deducted Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\e549cfce-3249-479f-a4fc-53bde2615914_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\e549cfce-3249-479f-a4fc-53bde2615914_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\e549cfce-3249-479f-a4fc-53bde2615914_image.png'>						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Company</p> 
+								<p class="duration text-sm">0h:0m:4s+308ms</p> 
+								<span class="datetime">04:42:23 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Created Company</h5>
+										<span class='badge badge-success'>10/9/2023 4:42:23 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:42:27 AM</span>
+										<span class='badge badge-default'>0h:0m:4s+308ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of creating a Company associated with a category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:27</td>
+				<td>
+The provided data exists in the selected Category, Company ID: 759									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Company</p> 
+								<p class="duration text-sm">0h:0m:5s+315ms</p> 
+								<span class="datetime">04:42:42 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Created Company</h5>
+										<span class='badge badge-success'>10/9/2023 4:42:42 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:42:47 AM</span>
+										<span class='badge badge-default'>0h:0m:5s+315ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of creating a Company associated with a category on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:47</td>
+				<td>
+The provided data exists in the selected Category, Company ID: 760									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Search By Category Name</p> 
+								<p class="duration text-sm">0h:0m:8s+929ms</p> 
+								<span class="datetime">04:42:47 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Search By Category Name</h5>
+										<span class='badge badge-success'>10/9/2023 4:42:47 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:42:56 AM</span>
+										<span class='badge badge-default'>0h:0m:8s+929ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify the functionality of searching By Category Name on the report page
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:42:56</td>
+				<td>
+Search by Category Name Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Search By Category Name</p> 
+								<p class="duration text-sm">0h:0m:8s+795ms</p> 
+								<span class="datetime">04:42:56 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Search By Category Name</h5>
+										<span class='badge badge-success'>10/9/2023 4:42:56 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:43:05 AM</span>
+										<span class='badge badge-default'>0h:0m:8s+795ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify the functionality of searching By Category Name on the report page
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:43:05</td>
+				<td>
+Search by Category Name Verified Successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Search By Category Date</p> 
+								<p class="duration text-sm">0h:0m:7s+132ms</p> 
+								<span class="datetime">04:43:18 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Search By Category Date</h5>
+										<span class='badge badge-success'>10/9/2023 4:43:18 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:43:25 AM</span>
+										<span class='badge badge-default'>0h:0m:7s+132ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify the functionality of searching & filtering by date, and confirming that the payment history dates fall within the specified date interval. 
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:43:25</td>
+				<td>
+Date: Sep 19, 2023 is within the interval: 07/01/2023 - 09/24/2023									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Search By Category Date</p> 
+								<p class="duration text-sm">0h:0m:7s+126ms</p> 
+								<span class="datetime">04:43:36 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Search By Category Date</h5>
+										<span class='badge badge-success'>10/9/2023 4:43:36 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:43:44 AM</span>
+										<span class='badge badge-default'>0h:0m:7s+126ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify the functionality of searching & filtering by date, and confirming that the payment history dates fall within the specified date interval. 
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:43:44</td>
+				<td>
+Date: Mar 4, 2022 is within the interval: 01/01/2022 - 01/01/2023									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Payment Count</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">04:43:56 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Payment Count</h5>
+										<span class='badge badge-success'>10/9/2023 4:43:56 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:43:56 AM</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify that the number of payments on Report page matches the count of payments history in payment history page
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:43:56</td>
+				<td>
+There is no row to check.									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Payment Count</p> 
+								<p class="duration text-sm">0h:0m:5s+074ms</p> 
+								<span class="datetime">04:44:08 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Payment Count</h5>
+										<span class='badge badge-success'>10/9/2023 4:44:08 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:44:13 AM</span>
+										<span class='badge badge-default'>0h:0m:5s+074ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										The test case aims to verify that the number of payments on Report page matches the count of payments history in payment history page
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:44:13</td>
+				<td>
+CountPay and Number of payment is equal									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Updating fullName</p> 
+								<p class="duration text-sm">0h:0m:9s+107ms</p> 
+								<span class="datetime">04:44:14 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Updating fullName</h5>
+										<span class='badge badge-success'>10/9/2023 4:44:14 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:44:23 AM</span>
+										<span class='badge badge-default'>0h:0m:9s+107ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of the updating account's fullName on the Account section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:44:23</td>
+				<td>
+FullName updated successfully									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Company With Show Button Pressed</p> 
+								<p class="duration text-sm">0h:0m:2s+458ms</p> 
+								<span class="datetime">04:44:45 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Created Company With Show Button Pressed</h5>
+										<span class='badge badge-success'>10/9/2023 4:44:45 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:44:47 AM</span>
+										<span class='badge badge-default'>0h:0m:2s+458ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of creating a Company associated with a category When Show Button Is pressed on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:44:47</td>
+				<td>
+The provided data exists in the selected Category, Company ID: 761									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Created Company With Show Button Pressed</p> 
+								<p class="duration text-sm">0h:0m:2s+349ms</p> 
+								<span class="datetime">04:45:05 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Created Company With Show Button Pressed</h5>
+										<span class='badge badge-success'>10/9/2023 4:45:05 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:45:07 AM</span>
+										<span class='badge badge-default'>0h:0m:2s+349ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is to verify the functionality of creating a Company associated with a category When Show Button Is pressed on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>04:45:07</td>
+				<td>
+The provided data exists in the selected Category, Company ID: 762									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Updated Category when show button Pressed</p> 
+								<p class="duration text-sm">0h:0m:5s+463ms</p> 
+								<span class="datetime">04:45:31 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Updated Category when show button Pressed</h5>
+										<span class='badge badge-success'>10/9/2023 4:45:31 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:45:36 AM</span>
+										<span class='badge badge-default'>0h:0m:5s+463ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is Focusing on verifying the functionality of Updating an existing category When Show Button Is pressed on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:34</td>
+				<td>
+Updated BillName Failed to Verify, Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:34</td>
+				<td>
+Updated Image Failed to Verify, Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:34</td>
+				<td>
+Updated Email Failed to Verify Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:34</td>
+				<td>
+Updated Location Failed to Verify, Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:34</td>
+				<td>
+Updated Deducted Failed to Verify, Category ID: 414									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:45:36</td>
+				<td>
+Category Update Failed to Verified									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\24e888a3-bfa3-4c5c-a313-ed74f8caf210_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\24e888a3-bfa3-4c5c-a313-ed74f8caf210_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\24e888a3-bfa3-4c5c-a313-ed74f8caf210_image.png'><img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\6028487c-3b00-41a2-8f0b-f105c84a6e58_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\6028487c-3b00-41a2-8f0b-f105c84a6e58_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\6028487c-3b00-41a2-8f0b-f105c84a6e58_image.png'>						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Updated Category when show button Pressed</p> 
+								<p class="duration text-sm">0h:0m:5s+431ms</p> 
+								<span class="datetime">04:45:59 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify Updated Category when show button Pressed</h5>
+										<span class='badge badge-success'>10/9/2023 4:45:59 AM</span>
+										<span class='badge badge-danger'>10/9/2023 4:46:05 AM</span>
+										<span class='badge badge-default'>0h:0m:5s+431ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										This test case is Focusing on verifying the functionality of Updating an existing category When Show Button Is pressed on the category section of the website.
+									</div>
+								</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:02</td>
+				<td>
+Updated BillName Failed to Verify, Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:02</td>
+				<td>
+Updated Image Failed to Verify, Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:02</td>
+				<td>
+Updated Email Failed to Verify Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:02</td>
+				<td>
+Updated Location Failed to Verify, Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:02</td>
+				<td>
+Updated Deducted Failed to Verify, Category ID: 415									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>04:46:05</td>
+				<td>
+Category Update Failed to Verified									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+<img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\e69ddaa4-3ca7-40c7-8d45-00041ad8a54c_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\e69ddaa4-3ca7-40c7-8d45-00041ad8a54c_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\e69ddaa4-3ca7-40c7-8d45-00041ad8a54c_image.png'><img class='r-img' title='' onerror='this.style.display="none"' data-featherlight='D:\Files\QAPractical\MoFinalProj\Screen\\2f95a2f3-6170-482d-9662-92298fe36dc6_image.png' src='D:\Files\QAPractical\MoFinalProj\Screen\\2f95a2f3-6170-482d-9662-92298fe36dc6_image.png' data-src='D:\Files\QAPractical\MoFinalProj\Screen\\2f95a2f3-6170-482d-9662-92298fe36dc6_image.png'>						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='66.66666666666666%'>
+	                    <b>12</b> tests passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='33.33333333333333%'><b>6</b> tests failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+			</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light">18</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>66.67%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">10/9/2023 4:40:26 AM</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:05:38.9286889</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<p class="">Duration</p>
+							<h6 class="font-weight-light">00:05:44.3483083</h6>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 18,
+		passParent: 12,
+		failParent: 6,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 6,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
