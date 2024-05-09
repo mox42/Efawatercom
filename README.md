@@ -4,7 +4,7 @@
 This project is a comprehensive testing suite designed for Efawatercom, an online bill payment platform. The testing suite encompasses various aspects of software testing, including manual testing, automation testing, performance testing, and API testing.
 
 ## Features
-- **Manual Testing:** Manual testing documentation is available on the DevOps Azure platform. [Link to manual testing documentation](https://dev.azure.com/Mohammedqasem/MoQasem-Efawatercom)
+- **Manual Testing:** Manual testing documentation is available on the DevOps Azure platform. [Link to manual testing test cases](https://dev.azure.com/Mohammedqasem/MoQasem-Efawatercom) or you can find it in the provided link in the notebook with the name "DevOps UR".
 
 
 - **Automation Testing with Selenium and C#:** Utilizing Selenium WebDriver and C# language, this project automates the testing of critical user journeys and functionalities on the Efawatercom website. This ensures the reliability and functionality of the platform across different browsers and environments.
